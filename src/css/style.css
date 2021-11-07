@@ -1,0 +1,133 @@
+#container {
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  box-sizing: border-box;
+  width: 300px;
+  height: 100%;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+}
+
+.column:nth-child(n + 1) {
+  margin-left: 10px;
+}
+
+.title {
+  display: block;
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(0, 0, 32);
+}
+
+.tasks-container {
+  min-height: 50px;
+  padding: 10px;
+}
+
+.task {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  padding: 5px 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.task:nth-child(n + 2) {
+  margin-top: 10px;
+}
+
+.new-place {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 10px;
+  background-color: rgb(201, 201, 201);
+  border-radius: 3px;
+}
+
+.new-place:first-child {
+  margin-top: 0px;
+}
+
+.dragged {
+  position: absolute;
+  z-index: 999;
+  width: 280px;
+  transform: rotate(5deg);
+  box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+  pointer-events: none;
+}
+
+.removeTask {
+  position: absolute;
+  top: 0;
+  left: calc(100% - 20px);
+}
+
+.button-new-task {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 0px 0px 5px 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(107, 107, 107);
+}
+
+.button-new-task:hover {
+  background-color: rgb(207, 207, 207);
+}
+
+.new-task {
+  padding: 10px 20px;
+}
+
+.text-new-task {
+  box-sizing: border-box;
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 50px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+.btn-new-task {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btn-add {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  width: 120px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: rgb(86, 173, 86);
+  border: none;
+  border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.close {
+  display: block;
+  text-decoration: none;
+  color: rgb(107, 107, 107);
+}
+
+.hidden {
+  display: none;
+}
+
+
